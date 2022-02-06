@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunnerTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 42.481 s <<< FAILURE! - in runner.RunnerTests
+Check amount of elements on a page(Smoke)  Time elapsed: 9.599 s  <<< ERROR!
+java.lang.NullPointerException
+

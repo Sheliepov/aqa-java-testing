@@ -1,0 +1,416 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-05T18:09:49.507Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1791636000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.testsSetUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Check site search ability",
+        "description": "",
+        "id": "smoke;check-site-search-ability;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 107622000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1926790000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User opens \u0027https://www.amazon.com/\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.amazon.com/\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.DefinitionSteps.openPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 257476000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter \u0027ipad\u0027 into search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027ipad\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.DefinitionSteps.userEnterTextIntoSearchField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1454915000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click to \u0027Search\u0027 button",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickToSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2048922000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Product list is displayed",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.productListIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-05T18:09:57.146Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1220378000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.testsSetUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Check search by category",
+        "description": "",
+        "id": "smoke;check-search-by-category;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 108627000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1918741000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User opens \u0027https://www.amazon.com/\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.amazon.com/\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.DefinitionSteps.openPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270650000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click HamburgerMenu button",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickHamburgerMenuButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2087454000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click a product category",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickAProductCategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3838167000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User selects a subcategory",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userSelectsASubcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3185891000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click check_box parameter",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickCheck_boxParameter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2244488000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User check availability product",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userCheckAvailabilityProduct()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-05T18:10:12.025Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1127404000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.testsSetUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Check amount of elements on a page",
+        "description": "",
+        "id": "smoke;check-amount-of-elements-on-a-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 119861000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1959326000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User opens \u0027https://www.amazon.com/\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.amazon.com/\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.DefinitionSteps.openPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 827223000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click HamburgerMenu button",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickHamburgerMenuButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2083387000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click a product category",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickAProductCategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3466443000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User selects a subcategory",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userSelectsASubcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat stepdefinitions.DefinitionSteps.userChecksAmountOfElements(DefinitionSteps.java:91)\n\tat ✽.User checks amount of elements(file:///Users/serhii_sheliepov/MiddleProgEpam/Prerequisites/Module_Java_ReflectionApi/src/test/resources/smoke.feature:30)\n",
+              "duration": 7285000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "User checks amount of elements",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userChecksAmountOfElements()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-05T18:10:21.623Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1171455000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.testsSetUp()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Check count of images page",
+        "description": "",
+        "id": "smoke;check-count-of-images-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 110254000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2033946000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User opens \u0027https://www.amazon.com/\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://www.amazon.com/\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.DefinitionSteps.openPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 844163000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User click HamburgerMenu button",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickHamburgerMenuButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2089770000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User click a product category",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userClickAProductCategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3541358000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User selects a subcategory",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userSelectsASubcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39280000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User check count of images page",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userCheckCountOfImagesPage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Smoke",
+    "description": "",
+    "id": "smoke",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/smoke.feature",
+    "tags": []
+  }
+]

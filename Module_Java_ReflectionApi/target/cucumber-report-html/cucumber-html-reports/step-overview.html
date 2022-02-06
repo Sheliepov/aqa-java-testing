@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Module_Java_ReflectionAPI</td>
+                          <td>1</td>
+                        <td>05 Feb 2022, 20:13</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.openPage(java.lang.String)</td>
+                <td>4</td>
+                <td class="duration" data-value="7838803000">7s 838ms</td>
+                <td class="duration" data-value="1959700750">1s 959ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.productListIsDisplayed()</td>
+                <td>1</td>
+                <td class="duration" data-value="2048922000">2s 048ms</td>
+                <td class="duration" data-value="2048922000">2s 048ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.tearDown()</td>
+                <td>4</td>
+                <td class="duration" data-value="446364000">446ms</td>
+                <td class="duration" data-value="111591000">111ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.testsSetUp()</td>
+                <td>4</td>
+                <td class="duration" data-value="5310873000">5s 310ms</td>
+                <td class="duration" data-value="1327718250">1s 327ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userCheckAvailabilityProduct()</td>
+                <td>1</td>
+                <td class="duration" data-value="2244488000">2s 244ms</td>
+                <td class="duration" data-value="2244488000">2s 244ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userCheckCountOfImagesPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="39280000">039ms</td>
+                <td class="duration" data-value="39280000">039ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userChecksAmountOfElements()</td>
+                <td>1</td>
+                <td class="duration" data-value="7285000">007ms</td>
+                <td class="duration" data-value="7285000">007ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userClickAProductCategory()</td>
+                <td>3</td>
+                <td class="duration" data-value="6260611000">6s 260ms</td>
+                <td class="duration" data-value="2086870333">2s 086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userClickCheck_boxParameter()</td>
+                <td>1</td>
+                <td class="duration" data-value="3185891000">3s 185ms</td>
+                <td class="duration" data-value="3185891000">3s 185ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userClickHamburgerMenuButton()</td>
+                <td>3</td>
+                <td class="duration" data-value="1942036000">1s 942ms</td>
+                <td class="duration" data-value="647345333">647ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userClickToSearchButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1454915000">1s 454ms</td>
+                <td class="duration" data-value="1454915000">1s 454ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userEnterTextIntoSearchField(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="257476000">257ms</td>
+                <td class="duration" data-value="257476000">257ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinitions.DefinitionSteps.userSelectsASubcategory()</td>
+                <td>3</td>
+                <td class="duration" data-value="10845968000">10s 845ms</td>
+                <td class="duration" data-value="3615322666">3s 615ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>13</td>
+              <td>28</td>
+              <td class="duration">41s 882ms</td>
+              <td class="duration">1s 495ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
