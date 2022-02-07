@@ -6,12 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
-    @FindBy(id = "twotabsearchtextbox")
-    private WebElement searchField;
-
-    @FindBy(id = "nav-search-submit-button")
-    private WebElement searchButton;
-
     @FindBy(xpath = "//a[@data-csa-c-slot-id='HamburgerMenuDesktop']")
     private WebElement popupCategoryMenu;
 
@@ -29,26 +23,17 @@ public class HomePage extends BasePage {
         driver.get(url);
     }
 
-    public void typeTextSearchField(String text) {
-        searchField.isDisplayed();
-        searchField.sendKeys(text);
-    }
-
-    public void clickSearchButton() {
-        searchButton.click();
-    }
-
     public void clickPopupCategoryMenu() {
         popupCategoryMenu.click();
     }
 
-    public void clickComputersHamburgerMenu() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickComputersHamburgerMenu() {
+        waitUntilIsTrue(2000,computersHamburgerMenu);
         computersHamburgerMenu.click();
     }
 
-    public void clickSubCategoryMenu() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickSubCategoryMenu() {
+        waitUntilIsTrue(2000,subCategoryMenu);
         subCategoryMenu.click();
     }
 }

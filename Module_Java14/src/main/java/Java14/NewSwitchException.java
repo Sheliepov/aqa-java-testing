@@ -5,7 +5,7 @@ public class NewSwitchException {
         System.out.println(java14(Month.NOV));
     }
 
-    public static String java14(Month month) {
+    private static String java14(Month month) {
         var result = switch (month) {
             case JAN -> "january";
             case FEB -> "february";
@@ -23,8 +23,5 @@ public class NewSwitchException {
             default -> null;
         };
         return result;
-    }
-    enum Month {
-        JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC
     }
 }

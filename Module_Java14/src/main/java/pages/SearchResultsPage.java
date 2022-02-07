@@ -1,6 +1,5 @@
 package pages;
 
-import Java14.NewSwitchException;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +9,9 @@ import java.util.List;
 
 
 public class SearchResultsPage extends BasePage {
+
+    private static final String NAME_OF_ELEMENTS = "HP";
+    private static final int COUNT_OF_ELEMENTS = 33;
 
     @FindBy(xpath = "//div[contains(@data-cel-widget, 'search_result_')]")
     private List<WebElement> productList;
@@ -27,43 +29,34 @@ public class SearchResultsPage extends BasePage {
         super(driver);
     }
 
-    public boolean isProductContentListDisplayed() throws InterruptedException {
-        Thread.sleep(2000);
-        return productContentList.get(0).isDisplayed();
-    }
-
-    public void checkThatSearchResultsContainsWord() throws InterruptedException {
-        Thread.sleep(2000);
+    public void checkThatSearchResultsContainsWord() {
+        waitUntilTrue(200, productContentList);
         for (WebElement webElement : productContentList) {
-            Assert.assertTrue(webElement.getText().contains("HP"));
+            Assert.assertTrue(webElement.getText().contains(NAME_OF_ELEMENTS));
         }
     }
 
     public void checkImageBlockAmount() {
-        Assert.assertEquals(33, imageBlockList.size());
+        Assert.assertEquals(COUNT_OF_ELEMENTS, imageBlockList.size());
     }
 
 
-    public void checkCountList() throws InterruptedException {
-        Thread.sleep(2000);
+    public void checkCountList() {
+        waitUntilTrue(2000, productList);
         int count = productList.size();
         switch (count) {
-            case 32 ->
-                    System.out.println("There are 32 picture elements on the page");
-            case 34 ->
-                    System.out.println("There are 34 picture elements on the page");
-            default ->
-                    System.out.println("There are more elements of pictures on the page");
+            case 32 -> System.out.println("There are 32 picture elements on the page");
+            case 34 -> System.out.println("There are 34 picture elements on the page");
+            default -> System.out.println("There are more elements of pictures on the page");
         }
     }
 
-    public boolean isProductListDisplayed() throws InterruptedException {
-        Thread.sleep(2000);
-        return productList.get(1).isDisplayed();
+    public boolean isProductListDisplayed() {
+        return productList.get(0).isDisplayed();
     }
 
-    public void clickHpMonitorsPage() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickHpMonitorsPage() {
+        waitUntilIsTrue(2000, hpMonitorsPage);
         hpMonitorsPage.click();
     }
 }
