@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-05T18:09:49.507Z",
+        "start_timestamp": "2022-02-07T15:15:47.934Z",
         "before": [
           {
             "result": {
-              "duration": 1791636000,
+              "duration": 1843945000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 107622000,
+              "duration": 106232000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1926790000,
+              "duration": 3326525000,
               "status": "passed"
             },
             "line": 4,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 257476000,
+              "duration": 196122000,
               "status": "passed"
             },
             "line": 5,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 1454915000,
+              "duration": 1786299000,
               "status": "passed"
             },
             "line": 6,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2048922000,
+              "duration": 854796000,
               "status": "passed"
             },
             "line": 7,
@@ -96,11 +96,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-05T18:09:57.146Z",
+        "start_timestamp": "2022-02-07T15:15:56.093Z",
         "before": [
           {
             "result": {
-              "duration": 1220378000,
+              "duration": 1286090000,
               "status": "passed"
             },
             "match": {
@@ -115,7 +115,7 @@
         "after": [
           {
             "result": {
-              "duration": 108627000,
+              "duration": 114237000,
               "status": "passed"
             },
             "match": {
@@ -128,7 +128,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1918741000,
+              "duration": 3506993000,
               "status": "passed"
             },
             "line": 14,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 270650000,
+              "duration": 897473000,
               "status": "passed"
             },
             "line": 15,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 2087454000,
+              "duration": 95891000,
               "status": "passed"
             },
             "line": 16,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 3838167000,
+              "duration": 624294000,
               "status": "passed"
             },
             "line": 17,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 3185891000,
+              "duration": 2599061000,
               "status": "passed"
             },
             "line": 18,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 2244488000,
+              "duration": 536019000,
               "status": "passed"
             },
             "line": 19,
@@ -207,11 +207,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-05T18:10:12.025Z",
+        "start_timestamp": "2022-02-07T15:16:05.759Z",
         "before": [
           {
             "result": {
-              "duration": 1127404000,
+              "duration": 1136713000,
               "status": "passed"
             },
             "match": {
@@ -226,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 119861000,
+              "duration": 111491000,
               "status": "passed"
             },
             "match": {
@@ -239,7 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1959326000,
+              "duration": 1690614000,
               "status": "passed"
             },
             "line": 26,
@@ -257,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 827223000,
+              "duration": 923519000,
               "status": "passed"
             },
             "line": 27,
@@ -269,7 +269,7 @@
           },
           {
             "result": {
-              "duration": 2083387000,
+              "duration": 94685000,
               "status": "passed"
             },
             "line": 28,
@@ -281,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 3466443000,
+              "duration": 762534000,
               "status": "passed"
             },
             "line": 29,
@@ -293,9 +293,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat stepdefinitions.DefinitionSteps.userChecksAmountOfElements(DefinitionSteps.java:91)\n\tat ✽.User checks amount of elements(file:///Users/serhii_sheliepov/MiddleProgEpam/Prerequisites/Module_Java_ReflectionApi/src/test/resources/smoke.feature:30)\n",
-              "duration": 7285000,
-              "status": "failed"
+              "duration": 1560015000,
+              "status": "passed"
             },
             "line": 30,
             "name": "User checks amount of elements",
@@ -307,11 +306,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-05T18:10:21.623Z",
+        "start_timestamp": "2022-02-07T15:16:12.042Z",
         "before": [
           {
             "result": {
-              "duration": 1171455000,
+              "duration": 1113090000,
               "status": "passed"
             },
             "match": {
@@ -319,14 +318,14 @@
             }
           }
         ],
-        "line": 45,
+        "line": 46,
         "name": "Check count of images page",
         "description": "",
         "id": "smoke;check-count-of-images-page;;2",
         "after": [
           {
             "result": {
-              "duration": 110254000,
+              "duration": 105636000,
               "status": "passed"
             },
             "match": {
@@ -339,7 +338,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2033946000,
+              "duration": 1883336000,
               "status": "passed"
             },
             "line": 37,
@@ -357,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 844163000,
+              "duration": 1275766000,
               "status": "passed"
             },
             "line": 38,
@@ -369,7 +368,7 @@
           },
           {
             "result": {
-              "duration": 2089770000,
+              "duration": 93481000,
               "status": "passed"
             },
             "line": 39,
@@ -381,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 3541358000,
+              "duration": 469523000,
               "status": "passed"
             },
             "line": 40,
@@ -393,13 +392,25 @@
           },
           {
             "result": {
-              "duration": 39280000,
+              "duration": 1341231000,
               "status": "passed"
             },
             "line": 41,
             "name": "User check count of images page",
             "match": {
               "location": "stepdefinitions.DefinitionSteps.userCheckCountOfImagesPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 404896000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User check product list is displayed",
+            "match": {
+              "location": "stepdefinitions.DefinitionSteps.userCheckProductListIsDisplayed()"
             },
             "keyword": "And "
           }

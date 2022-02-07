@@ -17,10 +17,10 @@ import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
 public class DefinitionSteps {
 
     private static final long DEFAULT_TIMEOUT = 150;
-    WebDriver driver;
-    HomePage homePage;
-    SearchResultsPage searchResultsPage;
-    PageFactoryManager pageFactoryManager;
+    private WebDriver driver;
+    private HomePage homePage;
+    private SearchResultsPage searchResultsPage;
+    private PageFactoryManager pageFactoryManager;
 
     @Before
     public void testsSetUp() {
@@ -52,7 +52,7 @@ public class DefinitionSteps {
     }
 
     @Then("Product list is displayed")
-    public void productListIsDisplayed() throws InterruptedException {
+    public void productListIsDisplayed() {
         searchResultsPage = pageFactoryManager.getSearchResultsPage();
         Assert.assertTrue(searchResultsPage.isProductListDisplayed());
     }
@@ -64,30 +64,31 @@ public class DefinitionSteps {
     }
 
     @And("User click a product category")
-    public void userClickAProductCategory() throws InterruptedException {
+    public void userClickAProductCategory() {
         homePage.waitForPageLoadComplete(DEFAULT_TIMEOUT);
         homePage.clickComputersHamburgerMenu();
     }
 
     @And("User selects a subcategory")
-    public void userSelectsASubcategory() throws InterruptedException {
+    public void userSelectsASubcategory() {
         homePage.clickSubCategoryMenu();
     }
 
     @And("User click check_box parameter")
-    public void userClickCheck_boxParameter() throws InterruptedException {
+    public void userClickCheck_boxParameter() {
         searchResultsPage = pageFactoryManager.getSearchResultsPage();
         searchResultsPage.clickHpMonitorsPage();
     }
 
     @And("User check availability product")
-    public void userCheckAvailabilityProduct() throws InterruptedException {
+    public void userCheckAvailabilityProduct() {
         searchResultsPage.checkThatSearchResultsContainsWord();
     }
 
     @And("User checks amount of elements")
     public void userChecksAmountOfElements() {
         pageFactoryManager.getSearchResultsPage().waitForPageLoadComplete(DEFAULT_TIMEOUT);
+        searchResultsPage = pageFactoryManager.getSearchResultsPage();
         searchResultsPage.checkImageBlockAmount();
     }
 
@@ -96,5 +97,10 @@ public class DefinitionSteps {
         pageFactoryManager.getSearchResultsPage().waitForPageLoadComplete(DEFAULT_TIMEOUT);
         searchResultsPage = pageFactoryManager.getSearchResultsPage();
         searchResultsPage.checkCountList();
+    }
+
+    @And("User check product list is displayed")
+    public void userCheckProductListIsDisplayed() {
+        Assert.assertTrue(searchResultsPage.isProductListDisplayed());
     }
 }

@@ -42,13 +42,13 @@ public class HomePage extends BasePage {
         popupCategoryMenu.click();
     }
 
-    public void clickComputersHamburgerMenu() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickComputersHamburgerMenu() {
+        waitUntilIsTrue(2000,computersHamburgerMenu);
         computersHamburgerMenu.click();
     }
 
-    public void clickSubCategoryMenu() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickSubCategoryMenu() {
+        waitUntilIsTrue(2000,subCategoryMenu);
         subCategoryMenu.click();
     }
 }

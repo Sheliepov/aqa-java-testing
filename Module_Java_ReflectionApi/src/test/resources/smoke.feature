@@ -39,6 +39,7 @@ Feature: Smoke
     And User click a product category
     And User selects a subcategory
     And User check count of images page
+    And User check product list is displayed
 
     Examples:
       | homePage                |

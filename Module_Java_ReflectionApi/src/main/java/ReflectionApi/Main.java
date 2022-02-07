@@ -31,7 +31,7 @@ public class Main {
                 System.out.println(Modifier.toString(method.getModifiers()));
                 System.out.println(method.getReturnType().getName());
                 method.setAccessible(true);
-                method.invoke(someClass, "test");
+                method.invoke(someClass, " test");
             }
 
             System.out.println("");
@@ -43,26 +43,9 @@ public class Main {
                 System.out.println(Modifier.toString(field.getModifiers()));
                 field.setAccessible(true);
                 System.out.println(field.getInt(someClass));
-                field.setInt(someClass, 10);
+                field.setInt(someClass, 55);
                 System.out.println(field.getInt(someClass));
             }
-        }
-    }
-
-    static class SomeClass {
-        private int i;
-        //String s;
-
-        public SomeClass() {
-        }
-
-        SomeClass(String s) {
-           // this.s = s;
-        }
-
-        private synchronized String someMethod(String s) {
-            System.out.println("this is" + s);
-            return s;
         }
     }
 }
